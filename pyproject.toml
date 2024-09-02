@@ -1,0 +1,4 @@
+[tool.mutmut]
+paths_to_mutate="/home/pedrosalucas/CS50P-Final-Project"
+tests_dir="/home/pedrosalucas/CS50P-Final-Project/test"
+runner="pytest"

@@ -1,0 +1,659 @@
+<html><body><h1>/home/pedrosalucas/CS50P-Final-Project/project.py</h1>Killed 31 out of 91 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 1</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -22,7 +22,7 @@
+ 
+ 
+ def main():
+-    birthmonth, birthday, birthyear = is_valid(input("Enter Birthdate: ").lower())
++    birthmonth, birthday, birthyear = is_valid(input("XXEnter Birthdate: XX").lower())
+     today = date.today()
+     age = calculate_age(birthmonth, int(birthday), int(birthyear), today)
+     days = calculate_days(birthmonth, int(birthday), today)
+</pre><h3>Mutant 7</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -26,7 +26,7 @@
+     today = date.today()
+     age = calculate_age(birthmonth, int(birthday), int(birthyear), today)
+     days = calculate_days(birthmonth, int(birthday), today)
+-    print(f"Your age as of {date.today().strftime('%B %d, %Y')} is {age} years old.\n{days} days before your Birthday!")
++    print(f"XXYour age as of {date.today().strftime('%B %d, %Y')} is {age} years old.\n{days} days before your Birthday!XX")
+ 
+ 
+ def is_valid(birthdate: str):
+</pre><h3>Mutant 13</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -46,7 +46,7 @@
+     if matches := re.search(regex, birthdate, re.IGNORECASE):
+         return matches.group(1), matches.group(2), matches.group(3)
+     else:
+-        raise ValueError("Invalid Date Format.")
++        raise ValueError("XXInvalid Date Format.XX")
+ 
+ 
+ def month_to_integer(month: str):
+</pre><h3>Mutant 15</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -66,7 +66,7 @@
+ 
+     months = {
+         "fullname": {
+-            "january": 1,
++            "XXjanuaryXX": 1,
+             "february": 2,
+             "march": 3,
+             "april": 4,
+</pre><h3>Mutant 16</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -66,7 +66,7 @@
+ 
+     months = {
+         "fullname": {
+-            "january": 1,
++            "january": 2,
+             "february": 2,
+             "march": 3,
+             "april": 4,
+</pre><h3>Mutant 17</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -67,7 +67,7 @@
+     months = {
+         "fullname": {
+             "january": 1,
+-            "february": 2,
++            "XXfebruaryXX": 2,
+             "march": 3,
+             "april": 4,
+             "may": 5,
+</pre><h3>Mutant 18</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -67,7 +67,7 @@
+     months = {
+         "fullname": {
+             "january": 1,
+-            "february": 2,
++            "february": 3,
+             "march": 3,
+             "april": 4,
+             "may": 5,
+</pre><h3>Mutant 19</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -68,7 +68,7 @@
+         "fullname": {
+             "january": 1,
+             "february": 2,
+-            "march": 3,
++            "XXmarchXX": 3,
+             "april": 4,
+             "may": 5,
+             "june": 6,
+</pre><h3>Mutant 20</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -68,7 +68,7 @@
+         "fullname": {
+             "january": 1,
+             "february": 2,
+-            "march": 3,
++            "march": 4,
+             "april": 4,
+             "may": 5,
+             "june": 6,
+</pre><h3>Mutant 21</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -69,7 +69,7 @@
+             "january": 1,
+             "february": 2,
+             "march": 3,
+-            "april": 4,
++            "XXaprilXX": 4,
+             "may": 5,
+             "june": 6,
+             "july": 7,
+</pre><h3>Mutant 22</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -69,7 +69,7 @@
+             "january": 1,
+             "february": 2,
+             "march": 3,
+-            "april": 4,
++            "april": 5,
+             "may": 5,
+             "june": 6,
+             "july": 7,
+</pre><h3>Mutant 23</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -70,7 +70,7 @@
+             "february": 2,
+             "march": 3,
+             "april": 4,
+-            "may": 5,
++            "XXmayXX": 5,
+             "june": 6,
+             "july": 7,
+             "august": 8,
+</pre><h3>Mutant 24</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -70,7 +70,7 @@
+             "february": 2,
+             "march": 3,
+             "april": 4,
+-            "may": 5,
++            "may": 6,
+             "june": 6,
+             "july": 7,
+             "august": 8,
+</pre><h3>Mutant 25</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -71,7 +71,7 @@
+             "march": 3,
+             "april": 4,
+             "may": 5,
+-            "june": 6,
++            "XXjuneXX": 6,
+             "july": 7,
+             "august": 8,
+             "september": 9,
+</pre><h3>Mutant 26</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -71,7 +71,7 @@
+             "march": 3,
+             "april": 4,
+             "may": 5,
+-            "june": 6,
++            "june": 7,
+             "july": 7,
+             "august": 8,
+             "september": 9,
+</pre><h3>Mutant 27</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -72,7 +72,7 @@
+             "april": 4,
+             "may": 5,
+             "june": 6,
+-            "july": 7,
++            "XXjulyXX": 7,
+             "august": 8,
+             "september": 9,
+             "october": 10,
+</pre><h3>Mutant 28</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -72,7 +72,7 @@
+             "april": 4,
+             "may": 5,
+             "june": 6,
+-            "july": 7,
++            "july": 8,
+             "august": 8,
+             "september": 9,
+             "october": 10,
+</pre><h3>Mutant 29</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -73,7 +73,7 @@
+             "may": 5,
+             "june": 6,
+             "july": 7,
+-            "august": 8,
++            "XXaugustXX": 8,
+             "september": 9,
+             "october": 10,
+             "november": 11,
+</pre><h3>Mutant 30</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -73,7 +73,7 @@
+             "may": 5,
+             "june": 6,
+             "july": 7,
+-            "august": 8,
++            "august": 9,
+             "september": 9,
+             "october": 10,
+             "november": 11,
+</pre><h3>Mutant 31</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -74,7 +74,7 @@
+             "june": 6,
+             "july": 7,
+             "august": 8,
+-            "september": 9,
++            "XXseptemberXX": 9,
+             "october": 10,
+             "november": 11,
+             "december": 12,
+</pre><h3>Mutant 32</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -74,7 +74,7 @@
+             "june": 6,
+             "july": 7,
+             "august": 8,
+-            "september": 9,
++            "september": 10,
+             "october": 10,
+             "november": 11,
+             "december": 12,
+</pre><h3>Mutant 37</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -77,7 +77,7 @@
+             "september": 9,
+             "october": 10,
+             "november": 11,
+-            "december": 12,
++            "XXdecemberXX": 12,
+         },
+         "abbreviated_name": {
+             "jan": 1,
+</pre><h3>Mutant 38</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -77,7 +77,7 @@
+             "september": 9,
+             "october": 10,
+             "november": 11,
+-            "december": 12,
++            "december": 13,
+         },
+         "abbreviated_name": {
+             "jan": 1,
+</pre><h3>Mutant 40</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -80,7 +80,7 @@
+             "december": 12,
+         },
+         "abbreviated_name": {
+-            "jan": 1,
++            "XXjanXX": 1,
+             "feb": 2,
+             "mar": 3,
+             "apr": 4,
+</pre><h3>Mutant 41</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -80,7 +80,7 @@
+             "december": 12,
+         },
+         "abbreviated_name": {
+-            "jan": 1,
++            "jan": 2,
+             "feb": 2,
+             "mar": 3,
+             "apr": 4,
+</pre><h3>Mutant 42</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -81,7 +81,7 @@
+         },
+         "abbreviated_name": {
+             "jan": 1,
+-            "feb": 2,
++            "XXfebXX": 2,
+             "mar": 3,
+             "apr": 4,
+             "may": 5,
+</pre><h3>Mutant 43</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -81,7 +81,7 @@
+         },
+         "abbreviated_name": {
+             "jan": 1,
+-            "feb": 2,
++            "feb": 3,
+             "mar": 3,
+             "apr": 4,
+             "may": 5,
+</pre><h3>Mutant 44</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -82,7 +82,7 @@
+         "abbreviated_name": {
+             "jan": 1,
+             "feb": 2,
+-            "mar": 3,
++            "XXmarXX": 3,
+             "apr": 4,
+             "may": 5,
+             "jun": 6,
+</pre><h3>Mutant 45</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -82,7 +82,7 @@
+         "abbreviated_name": {
+             "jan": 1,
+             "feb": 2,
+-            "mar": 3,
++            "mar": 4,
+             "apr": 4,
+             "may": 5,
+             "jun": 6,
+</pre><h3>Mutant 46</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -83,7 +83,7 @@
+             "jan": 1,
+             "feb": 2,
+             "mar": 3,
+-            "apr": 4,
++            "XXaprXX": 4,
+             "may": 5,
+             "jun": 6,
+             "jul": 7,
+</pre><h3>Mutant 47</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -83,7 +83,7 @@
+             "jan": 1,
+             "feb": 2,
+             "mar": 3,
+-            "apr": 4,
++            "apr": 5,
+             "may": 5,
+             "jun": 6,
+             "jul": 7,
+</pre><h3>Mutant 48</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -84,7 +84,7 @@
+             "feb": 2,
+             "mar": 3,
+             "apr": 4,
+-            "may": 5,
++            "XXmayXX": 5,
+             "jun": 6,
+             "jul": 7,
+             "aug": 8,
+</pre><h3>Mutant 49</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -84,7 +84,7 @@
+             "feb": 2,
+             "mar": 3,
+             "apr": 4,
+-            "may": 5,
++            "may": 6,
+             "jun": 6,
+             "jul": 7,
+             "aug": 8,
+</pre><h3>Mutant 50</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -85,7 +85,7 @@
+             "mar": 3,
+             "apr": 4,
+             "may": 5,
+-            "jun": 6,
++            "XXjunXX": 6,
+             "jul": 7,
+             "aug": 8,
+             "sept": 9,
+</pre><h3>Mutant 51</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -85,7 +85,7 @@
+             "mar": 3,
+             "apr": 4,
+             "may": 5,
+-            "jun": 6,
++            "jun": 7,
+             "jul": 7,
+             "aug": 8,
+             "sept": 9,
+</pre><h3>Mutant 52</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -86,7 +86,7 @@
+             "apr": 4,
+             "may": 5,
+             "jun": 6,
+-            "jul": 7,
++            "XXjulXX": 7,
+             "aug": 8,
+             "sept": 9,
+             "oct": 10,
+</pre><h3>Mutant 53</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -86,7 +86,7 @@
+             "apr": 4,
+             "may": 5,
+             "jun": 6,
+-            "jul": 7,
++            "jul": 8,
+             "aug": 8,
+             "sept": 9,
+             "oct": 10,
+</pre><h3>Mutant 54</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -87,7 +87,7 @@
+             "may": 5,
+             "jun": 6,
+             "jul": 7,
+-            "aug": 8,
++            "XXaugXX": 8,
+             "sept": 9,
+             "oct": 10,
+             "nov": 11,
+</pre><h3>Mutant 55</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -87,7 +87,7 @@
+             "may": 5,
+             "jun": 6,
+             "jul": 7,
+-            "aug": 8,
++            "aug": 9,
+             "sept": 9,
+             "oct": 10,
+             "nov": 11,
+</pre><h3>Mutant 56</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -88,7 +88,7 @@
+             "jun": 6,
+             "jul": 7,
+             "aug": 8,
+-            "sept": 9,
++            "XXseptXX": 9,
+             "oct": 10,
+             "nov": 11,
+             "dec": 12,
+</pre><h3>Mutant 57</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -88,7 +88,7 @@
+             "jun": 6,
+             "jul": 7,
+             "aug": 8,
+-            "sept": 9,
++            "sept": 10,
+             "oct": 10,
+             "nov": 11,
+             "dec": 12,
+</pre><h3>Mutant 62</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -91,7 +91,7 @@
+             "sept": 9,
+             "oct": 10,
+             "nov": 11,
+-            "dec": 12,
++            "XXdecXX": 12,
+         },
+     }
+     if month in months["fullname"]:
+</pre><h3>Mutant 63</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -91,7 +91,7 @@
+             "sept": 9,
+             "oct": 10,
+             "nov": 11,
+-            "dec": 12,
++            "dec": 13,
+         },
+     }
+     if month in months["fullname"]:
+</pre><h3>Mutant 71</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -99,7 +99,7 @@
+     elif month in months["abbreviated_name"]:
+         return months["abbreviated_name"][month]
+     else:
+-        raise ValueError("Month not found.")
++        raise ValueError("XXMonth not found.XX")
+ 
+ 
+ def calculate_age(birthmonth: str, birthday: int, birthyear: int, today):
+</pre><h3>Mutant 74</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -117,7 +117,7 @@
+     """
+ 
+     total_age = (today.year - birthyear)
+-    if month_to_integer(birthmonth) > today.month:
++    if month_to_integer(birthmonth) >= today.month:
+         total_age -= 1
+     elif month_to_integer(birthmonth) == today.month:
+         if birthday > today.day:
+</pre><h3>Mutant 78</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -119,7 +119,7 @@
+     total_age = (today.year - birthyear)
+     if month_to_integer(birthmonth) > today.month:
+         total_age -= 1
+-    elif month_to_integer(birthmonth) == today.month:
++    elif month_to_integer(birthmonth) != today.month:
+         if birthday > today.day:
+             total_age -= 1
+ 
+</pre><h3>Mutant 79</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -120,7 +120,7 @@
+     if month_to_integer(birthmonth) > today.month:
+         total_age -= 1
+     elif month_to_integer(birthmonth) == today.month:
+-        if birthday > today.day:
++        if birthday >= today.day:
+             total_age -= 1
+ 
+     return total_age
+</pre><h3>Mutant 80</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -121,7 +121,7 @@
+         total_age -= 1
+     elif month_to_integer(birthmonth) == today.month:
+         if birthday > today.day:
+-            total_age -= 1
++            total_age = 1
+ 
+     return total_age
+ 
+</pre><h3>Mutant 81</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -121,7 +121,7 @@
+         total_age -= 1
+     elif month_to_integer(birthmonth) == today.month:
+         if birthday > today.day:
+-            total_age -= 1
++            total_age += 1
+ 
+     return total_age
+ 
+</pre><h3>Mutant 82</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -121,7 +121,7 @@
+         total_age -= 1
+     elif month_to_integer(birthmonth) == today.month:
+         if birthday > today.day:
+-            total_age -= 1
++            total_age -= 2
+ 
+     return total_age
+ 
+</pre><h3>Mutant 84</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -139,7 +139,7 @@
+         time_to_birthday (int): the integer representing the days before birthday.
+     """
+     year_birthday = date(today.year, month_to_integer(birthmonth), birthday)
+-    if year_birthday < today:
++    if year_birthday <= today:
+         year_birthday = year_birthday.replace(year=today.year + 1)
+     time_to_birthday = abs(year_birthday - today)
+ 
+</pre><h3>Mutant 85</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -140,7 +140,7 @@
+     """
+     year_birthday = date(today.year, month_to_integer(birthmonth), birthday)
+     if year_birthday < today:
+-        year_birthday = year_birthday.replace(year=today.year + 1)
++        year_birthday = year_birthday.replace(year=today.year - 1)
+     time_to_birthday = abs(year_birthday - today)
+ 
+     return time_to_birthday.days
+</pre><h3>Mutant 86</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -140,7 +140,7 @@
+     """
+     year_birthday = date(today.year, month_to_integer(birthmonth), birthday)
+     if year_birthday < today:
+-        year_birthday = year_birthday.replace(year=today.year + 1)
++        year_birthday = year_birthday.replace(year=today.year + 2)
+     time_to_birthday = abs(year_birthday - today)
+ 
+     return time_to_birthday.days
+</pre><h3>Mutant 87</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -140,7 +140,7 @@
+     """
+     year_birthday = date(today.year, month_to_integer(birthmonth), birthday)
+     if year_birthday < today:
+-        year_birthday = year_birthday.replace(year=today.year + 1)
++        year_birthday = None
+     time_to_birthday = abs(year_birthday - today)
+ 
+     return time_to_birthday.days
+</pre><h3>Mutant 90</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -146,6 +146,6 @@
+     return time_to_birthday.days
+ 
+ 
+-if __name__ == "__main__":
++if __name__ != "__main__":
+     main()
+ 
+</pre><h3>Mutant 91</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -146,6 +146,6 @@
+     return time_to_birthday.days
+ 
+ 
+-if __name__ == "__main__":
++if __name__ == "XX__main__XX":
+     main()
+ 
+</pre><h2>Suspicious</h2>Mutants that made the test suite take longer, but otherwise seemed ok<h3>Mutant 2</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -22,7 +22,7 @@
+ 
+ 
+ def main():
+-    birthmonth, birthday, birthyear = is_valid(input("Enter Birthdate: ").lower())
++    birthmonth, birthday, birthyear = None
+     today = date.today()
+     age = calculate_age(birthmonth, int(birthday), int(birthyear), today)
+     days = calculate_days(birthmonth, int(birthday), today)
+</pre><h3>Mutant 3</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -23,7 +23,7 @@
+ 
+ def main():
+     birthmonth, birthday, birthyear = is_valid(input("Enter Birthdate: ").lower())
+-    today = date.today()
++    today = None
+     age = calculate_age(birthmonth, int(birthday), int(birthyear), today)
+     days = calculate_days(birthmonth, int(birthday), today)
+     print(f"Your age as of {date.today().strftime('%B %d, %Y')} is {age} years old.\n{days} days before your Birthday!")
+</pre><h3>Mutant 4</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -24,7 +24,7 @@
+ def main():
+     birthmonth, birthday, birthyear = is_valid(input("Enter Birthdate: ").lower())
+     today = date.today()
+-    age = calculate_age(birthmonth, int(birthday), int(birthyear), today)
++    age = None
+     days = calculate_days(birthmonth, int(birthday), today)
+     print(f"Your age as of {date.today().strftime('%B %d, %Y')} is {age} years old.\n{days} days before your Birthday!")
+ 
+</pre><h3>Mutant 6</h3><pre>--- /home/pedrosalucas/CS50P-Final-Project/project.py
++++ /home/pedrosalucas/CS50P-Final-Project/project.py
+@@ -26,7 +26,7 @@
+     today = date.today()
+     age = calculate_age(birthmonth, int(birthday), int(birthyear), today)
+     days = calculate_days(birthmonth, int(birthday), today)
+-    print(f"Your age as of {date.today().strftime('%B %d, %Y')} is {age} years old.\n{days} days before your Birthday!")
++    print(f"Your age as of {date.today().strftime('XX%B %d, %YXX')} is {age} years old.\n{days} days before your Birthday!")
+ 
+ 
+ def is_valid(birthdate: str):
+</pre></body></html>
