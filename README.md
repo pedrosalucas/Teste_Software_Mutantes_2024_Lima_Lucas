@@ -1,3 +1,8 @@
+Projeto Escolhido no Github: Age Calculator - [Link](https://github.com/clarencesarmiento/CS50P-Final-Project)
+Framework Teste Unitário: Pytest - [Link](https://docs.pytest.org/en/stable/)
+Toolkit Cobertura de Testes: Pytest-cov- [Link](https://pypi.org/project/pytest-cov/)
+Toolkit Teste de Mutação: Mutmut - [Link](https://mutmut.readthedocs.io/en/latest/)
+
 ## Clonar e Configurar Projeto
   Primeiro será necessário fazer um clone do projeto para a sua máquina, e após clonar o
 repositório, entre no diretório criado, usando os comandos abaixo:
